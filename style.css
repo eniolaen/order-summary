@@ -1,16 +1,14 @@
 :root {
-        --blue-dark: hsl(208, 49%, 24%);
-        --bs-purple-light: #916bd6;
-        --bs-gray-500: #adb5bd;
-        --bs-purple: #6f42c1;
-        --bs-indigo: #6610f2;
-        --bs-primary: #c9d9f1;
-        --dark-grayish-blue: hsl(207, 13%, 34%);
-        --dark-black-blue: hsl(240, 10%, 16%);
-        --dark-gray-blue: hsl(237, 17%, 21%);
-        --desaturated-blue: hsl(237, 23%, 32%);
-        --dark-gradient: linear-gradient(var(--dark-gray-blue), var(--desaturated-blue));
-      }
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --bs-primary: #c9d9f1;
+}
 
 *{
     margin: 0;
@@ -63,6 +61,7 @@ body{
     flex: 0 0 15%;
    
     width: 100%;
+   
     
 }
 .header img{
@@ -84,17 +83,19 @@ body{
 }
 
 .order-summary{
-    color: var(--blue-dark);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--Dark-blue);
+    font-family: 'Red Hat Display bold', sans-serif;
     text-transform: capitalize;
-    font-weight:bolder;
+    font-weight:700;
     font-size: x-large;
+    line-height: 10px;
 }
 
 .listen{
+    
     width: 80%;
     text-align: center;
-    color: var(--bs-gray-500);
+    color: var(--Desaturated-blue);
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-family: var(--bs-font-sans-serif);
     font-weight:600;
@@ -149,15 +150,70 @@ body{
    
 }
 .son h4{
-    color: var(--bs-gray-500);
+    color: var(--Desaturated-blue);
     font-weight: 600;
 }
 .son img{
     width: 40px;
     height: 40px;
 }
+.amount{
+    
+}
 
+.change{
+    font-family: 'Red Hat Display bold', sans-serif ;
+    font-weight: 600;
+}
 .change:hover{
     color: #6f42c1;
     cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+   
+    .container{
+        margin-left: -70px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .container{
+        margin-left: 20px;
+    }
+}
+
+
+
+@media only screen and (min-width: 800px){
+    .container{
+        margin-left: 30px;
+    }
+}
+
+
+
+@media only screen and (min-width: 900px){
+    .container{
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .container{
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container{
+        margin-left: 150px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1440px){
+    .container{
+        margin-left: 100px;
+    }
 }
