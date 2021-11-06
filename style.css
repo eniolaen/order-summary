@@ -149,6 +149,9 @@ body{
     justify-content: space-between;
    
 }
+.son h3{
+    color: darkslategrey
+}
 .son h4{
     color: var(--Desaturated-blue);
     font-weight: 600;
@@ -164,6 +167,7 @@ body{
 .change{
     font-family: 'Red Hat Display bold', sans-serif ;
     font-weight: 600;
+    color:hsl(224, 23%, 55%)
 }
 .change:hover{
     color: #6f42c1;
